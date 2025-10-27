@@ -182,23 +182,15 @@ export default function PostDischargeInstructions() {
                     </View>
                     <View className="pl-4 pr-10">
                       {/* Procedure Name */}
-                      <View className="flex-row justify-between items-start mb-2">
+                      <View className="  mb-2">
                         <Text
                           className="font-medium text-base"
-                          // style={{ flex: 1 }}
                         >
                           Summary:
                         </Text>
                         <Text
                           className="font-normal text-base leading-5 text-gray-700"
-                          style={{
-                            flexShrink: 1,
-                            // flexWrap: "wrap",
-                            textAlign: "right",
-                            maxWidth: 190,
-                          }}
-                          // numberOfLines={2}
-                          // ellipsizeMode="tail"
+                          
                         >
                           {item.summary}
                         </Text>
