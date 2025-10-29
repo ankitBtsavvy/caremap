@@ -175,7 +175,7 @@ export default function MedicalConditions() {
             subtitle="Imported from your healthcare provider"
             count={linkedUserConditions.length}
           />
-          <LinkedHealthSystemList data={linkedUserConditions} titleKey="condition_name"/>
+          <LinkedHealthSystemList data={linkedUserConditions} titleKey="condition_name" dateKey="onset_date"/>
 
           <Divider className="bg-gray-300 my-2" />
         </View>
@@ -207,7 +207,7 @@ export default function MedicalConditions() {
                         {item.condition_name}
                       </Text>
 
-                      <View className="flex-row items-center mt-1">
+                      <View className="flex-row items-center mt-1 ml-2 ">
                         <Icon
                           as={Calendar}
                           size="sm"

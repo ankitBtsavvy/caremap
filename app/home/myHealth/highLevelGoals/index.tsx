@@ -184,7 +184,7 @@ export default function HighLevelGoals() {
           count={linkedGoals.length}
         />
         {/* <Divider className="bg-gray-300 my-3" /> */}
-          <LinkedHealthSystemList data={linkedGoals} titleKey="goal_description" />
+          <LinkedHealthSystemList data={linkedGoals} titleKey="goal_description"  />
 
         <Divider className="bg-gray-300 mt-2" />
 
@@ -229,7 +229,7 @@ export default function HighLevelGoals() {
                     <View className="flex-row items-start mb-2">
                       <View className="flex-row items-center flex-1">
                         {/* Goal Title */}
-                        <Text className="text-lg text-black ml-3 font-normal">
+                        <Text className="text-lg font-semibold text-black ml-3 ">
                           {item.goal_description}
                         </Text>
                       </View>

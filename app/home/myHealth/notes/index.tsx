@@ -159,7 +159,12 @@ export default function Notes() {
                           {item.topic}
                         </Text>
                       </View>
-                      <View className="flex-row">
+                      <View className="flex-row items-center">
+                        <Icon
+                          as={Calendar}
+                          size="sm"
+                          className="text-gray-600 mr-1"
+                        />
                         <Text className="text-lg mr-3">
                           {item.reminder_date
                             ? new Date(item.reminder_date)

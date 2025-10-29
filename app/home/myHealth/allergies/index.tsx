@@ -171,7 +171,7 @@ export default function Allergies() {
             subtitle="Select ones to review with your care team"
             count={linkedAllergies.length}
           />
-          <LinkedHealthSystemList data={linkedAllergies} titleKey="topic"/>
+          <LinkedHealthSystemList data={linkedAllergies} titleKey="topic" detailsKey="details" dateKey="onset_date"/>
           <Divider className="bg-gray-300 my-3" />
         </View>
         
@@ -225,15 +225,15 @@ export default function Allergies() {
                       </View>
                       {item.details ? (
                         <View className="px-3 mt-1">
-                          <Text className="text-lg text-gray-700">
+                          <Text className="text-md text-gray-700">
                             {item.details}
                           </Text>
                         </View>
                       ) : null}
                       {item.severity ? (
                         <View className="px-3">
-                          <Text className="text-base text-gray-700">
-                            Severity:
+                          <Text className="text-base text-gray-800">
+                            Severity:{" "} 
                             <Text className="font-semibold">
                               {item.severity}
                             </Text>

@@ -45,6 +45,7 @@ export const up = async (db: SQLiteDatabase) => {
       patient_id INTEGER NOT NULL,
       linked_health_system INTEGER NOT NULL DEFAULT 0,
       condition_name TEXT NOT NULL,
+       onset_date TEXT NOT NULL DEFAULT (datetime('now')),
       created_date TEXT NOT NULL DEFAULT (datetime('now')),
       updated_date TEXT NOT NULL DEFAULT (datetime('now')),
       FOREIGN KEY (patient_id) REFERENCES ${tables.PATIENT}(id) ON DELETE CASCADE

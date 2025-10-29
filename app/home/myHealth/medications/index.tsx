@@ -144,7 +144,7 @@ export default function MedicationsScreen() {
           subtitle="Medications imported from your linked health system"
           count={linkedMedicationList.length}
         />
-          <LinkedHealthSystemList data={linkedMedicationList} titleKey="name"/>
+          <LinkedHealthSystemList data={linkedMedicationList} titleKey="name" detailsKey="details"/>
 
         <Divider className="bg-gray-300 my-2" />
         <IconLabelHeading
@@ -163,7 +163,7 @@ export default function MedicationsScreen() {
             <View className="flex-row items-start border border-gray-300 rounded-xl p-4 mb-4">
               <View className="ml-3 flex-1">
                 <Text className="font-semibold text-lg">{item.name}</Text>
-                <Text className="text-gray-500 text-base mt-1">
+                <Text className="text-gray-700 text-base mt-1">
                   {item.details}
                 </Text>
               </View>

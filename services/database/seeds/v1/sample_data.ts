@@ -39,6 +39,7 @@ export const samplePatientConditions: Partial<PatientCondition>[] = [
   {
     patient_id: 1,
     condition_name: "Asthma",
+    onset_date: new Date(lastWeek),
     created_date: new Date(lastWeek),
     updated_date: new Date(lastWeek),
     linked_health_system: true,
@@ -46,6 +47,7 @@ export const samplePatientConditions: Partial<PatientCondition>[] = [
   {
     patient_id: 1,
     condition_name: "Seasonal Allergies",
+    onset_date: new Date(yesterday),
     created_date: new Date(yesterday),
     updated_date: new Date(yesterday),
     linked_health_system: false,
@@ -53,6 +55,7 @@ export const samplePatientConditions: Partial<PatientCondition>[] = [
   {
     patient_id: 1,
     condition_name: "High Blood Pressure",
+    onset_date: new Date(now),
     created_date: new Date(now),
     updated_date: new Date(now),
     linked_health_system: true,
