@@ -38,6 +38,7 @@ export interface PatientSnapshot {
 export interface PatientCondition {
   id: number;
   patient_id: number;
+   onset_date: Date;
   linked_health_system: boolean;
   condition_name: string;
   created_date: Date;
